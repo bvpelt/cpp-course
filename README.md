@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=14431
+Tot: https://youtu.be/8jLOx1hD3_o?t=15896
 
 C++ Course
 
@@ -145,3 +145,7 @@ typename variablename {initial value}
 | double      |  8   |       15 | recommended default |
 | long double | 12   | > double |                     |
 
+## Boolean
+Only two values: true or false
+
+Booleans use 1 byte storage
