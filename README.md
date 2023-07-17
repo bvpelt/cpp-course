@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=15896
+Tot: https://youtu.be/8jLOx1hD3_o?t=19919
 
 C++ Course
 
@@ -149,3 +149,25 @@ typename variablename {initial value}
 Only two values: true or false
 
 Booleans use 1 byte storage
+
+## Characters
+
+Datatype char is ASCII value. See https://en.wikipedia.org/wiki/ASCII
+
+Unicode is out of scope for this course. See https://stackoverflow.com/questions/3010739/how-to-use-unicode-in-c
+
+
+## Auto datatype
+The compiler tries to deduce the type based on value.
+Best practice don't use.
+
+## Operations
+
+### Division
+With integers you only get the hole number, not the remainder.
+To get the remainder use '%' the modulo operator.
+
+### Preference
+
+See https://en.cppreference.com/w/ for general language documentation
+and https://en.cppreference.com/w/cpp/language/operator_precedence for operator precedence
