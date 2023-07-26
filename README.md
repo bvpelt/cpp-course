@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=25010
+Tot: https://youtu.be/8jLOx1hD3_o?t=37686
 
 C++ Course
 

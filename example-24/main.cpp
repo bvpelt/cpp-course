@@ -46,6 +46,46 @@ int main(int argc, char **argv)
     size_t j{};
     std::cout << "size of j: " << sizeof(j) << std::endl;
     std::cout << "The range for size_t is from: " << std::numeric_limits<size_t>::min() << " to: " << std::numeric_limits<size_t>::max() << std::endl;
+    for (j; j < 10; ++j)
+    {
+        std::cout << "value of j, local scope: " << j << std::endl;
+    }
+    std::cout << "value of j, global scope: " << j << std::endl;
+    std::cout << std::endl;
+
+    for (size_t i{0}; i < 10; ++i)
+    {
+        std::cout << "I: " << i << ". Double that and you get: " << 2 * i << std::endl;
+    }
+    std::cout << std::endl;
+
+    // best practice: define maximum number of iterations in a variable
+    const size_t COUNT{10};
+    for (size_t j{0}; j < COUNT; ++j) // initialize, condition, increment
+    {
+        std::cout << "The value of j: " << j << std::endl;
+    }
+    std::cout << std::endl;
+
+    // While loop
+
+    unsigned int k{0}; // initialize
+    while (k < COUNT)  // condition
+    {
+        std::cout << "The value of k: " << k << std::endl;
+        ++k; // increment
+    }
+    std::cout << std::endl;
+
+    // Do while loop
+
+    unsigned int m{5};
+    do
+    {
+        std::cout << "The value of m: " << m << std::endl;
+        ++m;
+    } while (m < COUNT);
+    std::cout << std::endl;
 
     return 0;
 }
