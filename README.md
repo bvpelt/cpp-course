@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=37686
+Tot: https://youtu.be/8jLOx1hD3_o?t=38470
 
 C++ Course
 
@@ -200,3 +200,28 @@ See https://en.cppreference.com/w/cpp/types/numeric_limits
 
 ### Math functions
 See https://en.cppreference.com/w/cpp/header/cmath
+
+### Memory
+
+Memory model
+
+Virtual memory managed by mmu Memory management unit
+
+All Operating Systems have there own memory map
+
+|        Memory area | description                                      |
+| -----------------: | -------------------------------------------------|
+| Sytem              |                                                  |
+| Stack              | local variables, function calls                  |
+| Heap               | additional memory that can be queued at run time |
+| Data               |                                                  |
+| Text               | executable probram                               |
+ 
+
+Comparison Stack Heap
+
+| Stack                                                  | Heap                                                                         |
+|--------------------------------------------------------|------------------------------------------------------------------------------|
+| memory is finit                                        | memory is finit                                                              |
+| developer isn't in full control of the memory lifetime | developer is in full control when memory is allocated and when it's released |
+| lifetime is controlled by the scope mechanism          | lifetime is controlled explicitly through new and delete operator            |

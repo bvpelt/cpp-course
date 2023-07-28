@@ -27,7 +27,6 @@ int main(int argc, char **argv)
     std::cout << "The value stored in *message is: " << *message << std::endl;
     std::cout << std::endl;
 
-
     std::cout << "The value stored in p_char is: " << *p_char << std::endl;
     std::cout << std::endl;
 
