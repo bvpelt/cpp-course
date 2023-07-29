@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=38470
+Tot: https://youtu.be/8jLOx1hD3_o?t=40059
 
 C++ Course
 
@@ -225,3 +225,26 @@ Comparison Stack Heap
 | memory is finit                                        | memory is finit                                                              |
 | developer isn't in full control of the memory lifetime | developer is in full control when memory is allocated and when it's released |
 | lifetime is controlled by the scope mechanism          | lifetime is controlled explicitly through new and delete operator            |
+
+Allocating memory 
+```cpp
+int *p_number1{new int};     // Dynamic memory allocated on the heap, but not initialized
+int *p_number2{new int(22)}; // Dynamic memory allocated on the head using direct initialization
+int *p_number3{new int{23}}; // Dynamic memory allocated on the head using uniform initialization
+```
+
+Release allocated memory
+```cpp
+delete p_number1;
+p_number1 = nullptr;
+
+delete p_number2;
+p_number2 = nullptr;
+
+delete p_number3;
+p_number3 = nullptr;
+```
+*Calling delete twice on the same pointer may lead to undefined behaviour!!!!*
+The compiler gives no error/warning.
+
+
