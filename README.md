@@ -161,7 +161,24 @@ Unicode is out of scope for this course. See https://stackoverflow.com/questions
 The compiler tries to deduce the type based on value.
 Best practice don't use.
 
+See [Output numbers/string](example-4/main.cpp)
+
+See [Integer base dec/oct/hex](example-5/main.cpp)
+
+See [Declaration/initialization datatype](example-6/main.cpp)
+
+See [Integer datatype](example-7/main.cpp)
+
+See [Float datatype](example-8/main.cpp)
+
+See [Boolean datatype](example-9/main.cpp)
+
+See [Initialization](example-10/main.cpp)
+
+See [Initialization and automatic type](example-11/main.cpp)
+
 ## Operations
+See [Simple operators](example-12/main.cpp)
 
 ### Division
 With integers you only get the hole number, not the remainder.
@@ -171,6 +188,20 @@ To get the remainder use '%' the modulo operator.
 
 See https://en.cppreference.com/w/ for general language documentation
 and https://en.cppreference.com/w/cpp/language/operator_precedence for operator precedence
+
+See [Precedence](example-13/main.cpp)
+
+### Increment / decrement operators
+See [Increment/Decrement operators](example-14/main.cpp)
+
+### Compound assignment operators
+See [Compound assignment operators](example-15/main.cpp)
+
+### Relational operators
+See [Relational operators](example-16/main.cpp)
+
+### Logical operators
+See [Logical operators](example-17/main.cpp)
 
 ### Output formatting
 See also https://en.cppreference.com/w/cpp/io/manip 
@@ -195,11 +226,46 @@ The following operators exist
 - std::setprecision()
 - std::setfill()
 
+See [Output formatting](example-18/main.cpp)
+
+
 ### Limits
 See https://en.cppreference.com/w/cpp/types/numeric_limits 
 
+See [Limits](example-19/main.cpp)
+
+
 ### Math functions
 See https://en.cppreference.com/w/cpp/header/cmath
+
+See [Math operators](example-20/main.cpp)
+
+
+### Support operators
+See [Support operators](example-21/main.cpp)
+
+### Bit operators
+See [Bit operators](example-22/main.cpp)
+
+### Flow control
+See [Conditional flow](example-23/main.cpp)
+
+
+### Loops
+See [Loops](example-24/main.cpp)
+
+### Arrays
+See [Array basic](example-25/main.cpp)
+
+See [Array](example-26/main.cpp)
+
+See [Array bounds](example-27/main.cpp)
+
+
+### Pointers
+See [Pointers](example-28/main.cpp)
+
+See [Pointers to char](example-29/main.cpp)
 
 ### Memory
 
@@ -209,22 +275,24 @@ Virtual memory managed by mmu Memory management unit
 
 All Operating Systems have there own memory map
 
-|        Memory area | description                                      |
-| -----------------: | -------------------------------------------------|
-| Sytem              |                                                  |
-| Stack              | local variables, function calls                  |
-| Heap               | additional memory that can be queued at run time |
-| Data               |                                                  |
-| Text               | executable probram                               |
+| Memory area | description                                      |
+| ----------: | ------------------------------------------------ |
+|       Sytem |                                                  |
+|       Stack | local variables, function calls                  |
+|        Heap | additional memory that can be queued at run time |
+|        Data |                                                  |
+|        Text | executable probram                               |
  
 
 Comparison Stack Heap
 
 | Stack                                                  | Heap                                                                         |
-|--------------------------------------------------------|------------------------------------------------------------------------------|
+| ------------------------------------------------------ | ---------------------------------------------------------------------------- |
 | memory is finit                                        | memory is finit                                                              |
 | developer isn't in full control of the memory lifetime | developer is in full control when memory is allocated and when it's released |
 | lifetime is controlled by the scope mechanism          | lifetime is controlled explicitly through new and delete operator            |
+
+See [Memory model](example-30/main.cpp)
 
 Allocating memory 
 ```cpp
@@ -247,4 +315,16 @@ p_number3 = nullptr;
 *Calling delete twice on the same pointer may lead to undefined behaviour!!!!*
 The compiler gives no error/warning.
 
+See [Memory allocation](example-31/main.cpp)
+
+*Pointers: Best practice*
+- initialize pointers
+- reset pointers after delete
+- for multiple pointers to the same address make sure the owner of the pointer is clear
+
+See [Dangling pointers](example-32/main.cpp)
+
+
+### Memory allocation error
+See [Memory allocation error](example-33/main.cpp)
 

@@ -4,6 +4,8 @@
 #include <string>
 #include <limits>
 
+#define MAX_INTS 100000000000000000
+#define PACK     100000000000000
 // one line comment
 
 /*
@@ -13,14 +15,42 @@ comments
 
 int main(int argc, char **argv)
 {
-    // Arrays
-    const int MAX_SCORES{10};
-    int scores[MAX_SCORES];
+    // New fails
+    // In some rare cases
 
-    std::cout << "Reading values from scores" << std::endl;
-    for (int i = 0; i < MAX_SCORES; ++i)
+
+
+    std::cout << "Try to allocate " << sizeof(int) * MAX_INTS << " bytes of memory" << std::endl;
+
+    try
     {
-        std::cout << "scores[" << i << "]: " << scores[i] << std::endl;
+        // simulate allocation a huge array
+        int *lot_of_ints{new int[MAX_INTS]};
+    }
+    catch (std::exception &ex)
+    {
+        std::cout << "Caught exception 1: " << ex.what() << std::endl;
+    }
+    std::cout << std::endl;
+
+    
+    const double ROUNDS{1000;
+    double sum{};
+    double lot_size{sizeof(int) * PACK};
+
+    for (size_t i{}; i < ROUNDS; i++)
+    {
+        try
+        {
+            int *lot_ints{new int[PACK]};
+        }
+        catch (std::exception &ex)
+        {
+            std::cout << "Caught exception 2: " << ex.what() << std::endl;
+            i = ROUNDS;
+        }
+        sum += lot_size;
+        std::cout << "[" << i << "]: allocated: " << lot_size << " of bytes, total allocated: " << sum << std::endl;
     }
     std::cout << std::endl;
 
