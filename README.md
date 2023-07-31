@@ -1,7 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=40059
-
+Tot: https://youtu.be/8jLOx1hD3_o?t=42965
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -324,7 +323,12 @@ See [Memory allocation](example-31/main.cpp)
 
 See [Dangling pointers](example-32/main.cpp)
 
-
 ### Memory allocation error
 See [Memory allocation error](example-33/main.cpp)
+
+### Memory leaks
+This occurs when you loose access to memory that was dynamically allocated
+If your program runs for a long time memory leaks might lead to a crash of your program
+
+See [Memory leaks](example-34/main.cpp)
 

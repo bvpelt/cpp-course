@@ -13,16 +13,14 @@ comments
 
 int main(int argc, char **argv)
 {
-    // Arrays
-    const int MAX_SCORES{10};
-    int scores[MAX_SCORES];
+    // Memory leaks
+    int *p{new int{67}};
 
-    std::cout << "Reading values from scores" << std::endl;
-    for (int i = 0; i < MAX_SCORES; ++i)
-    {
-        std::cout << "scores[" << i << "]: " << scores[i] << std::endl;
-    }
-    std::cout << std::endl;
+    int n{55}; // Stack variable
+
+    p = &n; // The address of int{61} is no longer accessable - memory leak
+
+    std::cout << "Program end" << std::endl;
 
     return 0;
 }

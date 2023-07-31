@@ -5,7 +5,7 @@
 #include <limits>
 
 #define MAX_INTS 100000000000000000
-#define PACK     100000000000000
+#define PACK 1000000000
 // one line comment
 
 /*
@@ -18,9 +18,7 @@ int main(int argc, char **argv)
     // New fails
     // In some rare cases
 
-
-
-    std::cout << "Try to allocate " << sizeof(int) * MAX_INTS << " bytes of memory" << std::endl;
+    std::cout << "Try to allocate 1: " << sizeof(int) * MAX_INTS << " bytes of memory" << std::endl;
 
     try
     {
@@ -34,7 +32,7 @@ int main(int argc, char **argv)
     std::cout << std::endl;
 
     
-    const double ROUNDS{1000;
+    const double ROUNDS{100};
     double sum{};
     double lot_size{sizeof(int) * PACK};
 
@@ -42,7 +40,7 @@ int main(int argc, char **argv)
     {
         try
         {
-            int *lot_ints{new int[PACK]};
+            int *lot_of_ints_1{new int[PACK]};
         }
         catch (std::exception &ex)
         {
@@ -53,6 +51,20 @@ int main(int argc, char **argv)
         std::cout << "[" << i << "]: allocated: " << lot_size << " of bytes, total allocated: " << sum << std::endl;
     }
     std::cout << std::endl;
+    
 
+    std::cout << "Try to allocate 2: " << sizeof(int) * MAX_INTS << " bytes of memory" << std::endl;
+
+    try
+    {
+        int *lot_of_ints_2{new (std::nothrow) int[MAX_INTS]};
+        std::cout << "After try to allocate 2 - lot_of_ints_2 pointer: " << lot_of_ints_2  << std::endl;
+    }
+    catch (std::exception &ex)
+    {
+        std::cout << "Caught exception 3: " << ex.what() << std::endl;
+    }
+
+    std::cout << "Program end" << std::endl;
     return 0;
 }
