@@ -330,5 +330,8 @@ See [Memory allocation error](example-33/main.cpp)
 This occurs when you loose access to memory that was dynamically allocated
 If your program runs for a long time memory leaks might lead to a crash of your program
 
-See [Memory leaks](example-34/main.cpp)
+See [Memory leaks - Dynamic array allocation](example-34/main.cpp)
 
+### References
+
+See [References](example-35/main.cpp)
