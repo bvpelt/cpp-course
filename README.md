@@ -377,3 +377,34 @@ c-strings are not save or convenient. std::string is a better alternative
 
 See [String manipulations](example-37/main.cpp)
 See [C-String manipulations](example-38/main.cpp)
+See [std::string](example-39/main.cpp)
+
+### One definition rule
+In the context of a program there is only meaning for declarations
+- free standing variables (in their scope) 
+- functions
+- classes
+- class member functions
+- class static member variables
+
+
+See [One definition rule](example-40)
+
+### Functions
+
+A function takes input(s) (0..n) and produces an output
+A function may only be defined once and is unique by its function signature.
+The function signature is function name + function parameters
+
+Function declaration and implementation can be split using .h (declaration - prototype) and .cpp (implementation) files.
+The prototype needs to be known before the implementation
+
+See [Functions](example-41/main.cpp)
+See [Function declaration and Definition](example-42/main.cpp)
+
+The compiler uses different phases:
+- preprocessing reading definitions generate translation units
+- compiling translation units to generate objects
+- linking objects to generate an exacutable
+  
+See [Function declaration and Definition in multiple files](example-43)
