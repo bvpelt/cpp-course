@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=42965
+Tot: https://youtu.be/8jLOx1hD3_o?t=49431
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -335,3 +335,45 @@ See [Memory leaks - Dynamic array allocation](example-34/main.cpp)
 ### References
 
 See [References](example-35/main.cpp)
+
+Comparison between references and pointers
+
+| References                                      | Pointers                                                                        |
+|-------------------------------------------------|---------------------------------------------------------------------------------|
+| don't use dereferencing for reading and writing | must go through dereference operator to read/write through point somewhere else |
+| can't be changed to reference something else    | can be changed to point somewhere else                                          |
+| must be initialized at declaration              | can be declared un-initialized (will contain garbage address)                   |
+
+A reference can be seen as a const pointer 
+
+```cpp
+double * const p_value {&avalue};
+p_value = &another_value; // gives an error at compiletime
+```
+
+### References and const
+
+See [References and const](example-36/main.cpp)
+
+### String manipulations
+
+These consist of c-string facilities: (see https://en.cppreference.com/w/cpp/header/cctype )
+- length
+- concatenate
+- copy
+- search...
+- is alphanumeric
+- is alphabetic
+- is blank
+- is lower/upper case
+- is digit
+- changing case
+
+and cstring (see https://en.cppreference.com/w/cpp/header/cstring )
+- check length of a string
+
+
+c-strings are not save or convenient. std::string is a better alternative
+
+See [String manipulations](example-37/main.cpp)
+See [C-String manipulations](example-38/main.cpp)
