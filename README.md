@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=49431
+Tot: https://youtu.be/8jLOx1hD3_o?t=63617
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -339,7 +339,7 @@ See [References](example-35/main.cpp)
 Comparison between references and pointers
 
 | References                                      | Pointers                                                                        |
-|-------------------------------------------------|---------------------------------------------------------------------------------|
+| ----------------------------------------------- | ------------------------------------------------------------------------------- |
 | don't use dereferencing for reading and writing | must go through dereference operator to read/write through point somewhere else |
 | can't be changed to reference something else    | can be changed to point somewhere else                                          |
 | must be initialized at declaration              | can be declared un-initialized (will contain garbage address)                   |
@@ -408,3 +408,36 @@ The compiler uses different phases:
 - linking objects to generate an exacutable
   
 See [Function declaration and Definition in multiple files](example-43)
+
+### Pass by value / pointer /reference
+
+- Although both passing parameters by pointer and by reference gives you the possibility to change the input parameter.
+- Input parameters should not be modifiable. Use the const keyword.
+
+*The best practice is to pass by reference.*
+
+See [Pass by value / pointer / reference](example-44/main.cpp)
+
+### Return values
+
+In modern compilers, return by value is commonly optimized out by the compiler when possible and modified to return by reference avoiding unnecessary copies!
+
+See [Returning values](example-45/main.cpp)
+
+
+### Function overloading
+
+With function overloading the parameters may differ by:
+- order
+- number
+- type
+
+
+See [Function overloading](example-46/main.cpp)
+
+### Lambda Functions
+
+Lambda functions is a mechanism to setup anonymous functions (without names).
+Once set up, we can either give them names and call them, or get the lambda functions to do things directly.
+
+See [Lambda Functions](example-47/main.cpp)
