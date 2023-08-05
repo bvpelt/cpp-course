@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=63617
+Tot: https://youtu.be/8jLOx1hD3_o?t=69939
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -478,7 +478,7 @@ int main(int argc, char **argv) {
 ```
 ### Concepts
 
-See https://en.cppreference.com/w/cpp/language/constraints 
+See https://en.cppreference.com/w/cpp/concepts
 
 There are standard builtin concepts but you can also create your own concepts
 Some built in concepts are
@@ -494,4 +494,12 @@ Some built in concepts are
 
 Concepts are a mechanism to place constraints on your template type parameters
 
-See [### Concepts](example-49/main.cpp)
+Requires clause
+- simple requirements
+- nested requirements
+- compound requirements
+- type requirements
+
+See [Concepts](example-49/main.cpp)
+See [Combining Concepts](example-50/main.cpp)
+See [Concepts and auto](example-51/main.cpp)
