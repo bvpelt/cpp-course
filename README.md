@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=69939
+Tot: https://youtu.be/8jLOx1hD3_o?t=75584
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -503,3 +503,25 @@ Requires clause
 See [Concepts](example-49/main.cpp)
 See [Combining Concepts](example-50/main.cpp)
 See [Concepts and auto](example-51/main.cpp)
+
+### Classes
+
+A class is a blueprint (model) for a realworld object.
+
+- class member variables can either be raw stack variables or pointers
+- members can't be references
+- classes have function (methods) that let them do things
+- class methods have access to the member variables, regardless of whether they are public or private
+- private members of classes (variables and functions) aren't accessible from outside the class definition
+
+*Constructors* a special kind of method that is called when an instance of a class is created
+- no return type
+- same name as the class
+- can have (0..n) parameters
+- usually used to initialized member variables of a class
+
+When you create your own constructur (without a default constructor) the compiler will nog generate a default constructor, without a parameter list. Resulting in a compilation error.
+
+
+See [Classes](example-52/main.cpp)
+See [Constructors](example-53/main.cpp)
