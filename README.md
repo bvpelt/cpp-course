@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=75584
+Tot: https://youtu.be/8jLOx1hD3_o?t=76210
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -525,3 +525,14 @@ When you create your own constructur (without a default constructor) the compile
 
 See [Classes](example-52/main.cpp)
 See [Constructors](example-53/main.cpp)
+
+
+### Classes across multiple files
+
+See [Classes across multiple files](example-54)
+
+### Managing Class Objects Throug Pointers
+
+There are special methods that are called when an object dies. They are needed when the object needs to release some dynamic memory, or for some other kind of clean up.
+
+See [Managing Class Objects Throug Pointers](example-55/main.cpp)
