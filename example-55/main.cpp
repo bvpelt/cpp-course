@@ -10,6 +10,21 @@ A number of lines with
 comments
 */
 
+void some_func() {
+    std::cout << "Started some_func" << std::endl;
+    Dog my_dog("Huskey", "Shepherd", 4);
+    std::cout << "Ended  some_func" << std::endl;
+}
+
+//
+// confusing example because copy constructor is needed
+//
+void other_func(Dog dog_param) {
+    std::cout << "Started other_func" << std::endl;
+    Dog my_dog("Huskey", "Shepherd", 4);
+    std::cout << "Ended  other_func" << std::endl;
+}
+
 int main(int argc, char **argv)
 {
     // Managing Class Objects Throug Pointers
@@ -40,8 +55,18 @@ int main(int argc, char **argv)
 
     delete c2;
 
+    Dog my_dog("Fluffy", "Shepherd", 12);
+    std::cout << "Dog name: " << my_dog.get_dog_name() << " breed: " << my_dog.get_dog_breed() << " age: " << *my_dog.get_dog_age() << std::endl;
+
     Dog *d = new Dog("Jip", "Bouvier", 2);
     std::cout << "Dog name: " << d->get_dog_name() << " breed: " << d->get_dog_breed() << " age: " << *d->get_dog_age() << std::endl;
+    d->set_dog_age(15);
+    std::cout << "Dog name: " << d->get_dog_name() << " breed: " << d->get_dog_breed() << " age: " << *d->get_dog_age() << std::endl;
+    delete d;
+
+    some_func();
+
+    other_func(my_dog); // at this point there is no copy constructor which is needed --- undefined behaviour
 
     std::cout << "Program end" << std::endl;
     return 0;

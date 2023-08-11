@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=76210
+Tot: https://youtu.be/8jLOx1hD3_o?t=82365
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -535,4 +535,88 @@ See [Classes across multiple files](example-54)
 
 There are special methods that are called when an object dies. They are needed when the object needs to release some dynamic memory, or for some other kind of clean up.
 
-See [Managing Class Objects Throug Pointers](example-55/main.cpp)
+When are destructor called
+- in weird places that may not be obvious
+  - when an object is passed by value to a function
+  - when a local object is returned from a function (some compilers)
+- obvious cases are
+  - when a local stack object goes out of scope (dies)
+  - when a heap object is released with delete
+
+When calling constructors for objects o1..o4 in a specific context the order of destructor calls are o4..o1
+
+See [Managing Class Objects Throug Pointers](example-55)
+
+### This pointer
+
+The this pointer points to the current object.
+
+It can be used to chain calls. Which is also possible by using references 
+
+example for using setters in chained calls using this pointer
+
+```cpp
+Dog * Dog::set_dog_name(std::string dog_name_param)
+{
+    dog_name = dog_name_param;
+    return this;
+}
+
+Dog * Dog::set_dog_breed(std::string dog_breed_param)
+{
+    dog_breed = dog_breed_param;
+    return this;
+}
+
+Dog * Dog::set_dog_age(int age_param)
+{
+    if (dog_age)
+    {
+        delete dog_age;
+    }
+    dog_age = new int(age_param);
+    return this;
+}
+
+p_dog->set_dog_name("Mario")->set_dog_breed("Fox Terrier")->set_dog_age(5);
+```
+
+example for using setters in chained calls using references
+```cpp
+Dog & Dog::set_dog_name(std::string dog_name_param)
+{
+    dog_name = dog_name_param;
+    return *this;
+}
+
+Dog & Dog::set_dog_breed(std::string dog_breed_param)
+{
+    dog_breed = dog_breed_param;
+    return *this;
+}
+
+Dog & Dog::set_dog_age(int age_param)
+{
+    if (dog_age)
+    {
+        delete dog_age;
+    }
+    dog_age = new int(age_param);
+    return *this;
+}
+
+p_dog->set_dog_name("Mario").set_dog_breed("Fox Terrier").set_dog_age(5);
+```
+
+See [This pointer](example-56)
+
+### Structs
+
+See [This pointer](example-57/main.cpp)
+
+### Size of class objects
+
+In general: the size of a class object is the sum of the size of each member variable.
+
+
+See [Size of class objects](example-58/main.cpp)
