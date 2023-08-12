@@ -92,7 +92,7 @@ int main(int argc, char **argv)
     std::cout << "sizeof(Dog2): " << sizeof(Dog2) << std::endl;
     std::cout << "sizeof(dog2): " << sizeof(dog2) << std::endl;
 
-    std::string name{"Hello World!"};
+    std::string name{"Hello World!"}; // string is object which points to a char *
     std::cout << "sizeof(name): " << sizeof(name) << " strlen(name): " << std::strlen(name.c_str()) << " name: " << name << std::endl;
     name = "I am the king of the universe";
     std::cout << "sizeof(name): " << sizeof(name) << " strlen(name): " << std::strlen(name.c_str()) << " name: " << name << std::endl;

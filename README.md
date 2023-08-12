@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=82365
+Tot: https://youtu.be/8jLOx1hD3_o?t=83573
 C++ Course
 
 See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -620,3 +620,22 @@ In general: the size of a class object is the sum of the size of each member var
 
 
 See [Size of class objects](example-58/main.cpp)
+
+### Inheritance
+
+- A defining feature of Object Oriented Programming in C++
+- Building types on top of other types
+- Inheritance hierarchies can be set up to suit your needs
+- Code reuse is improved
+
+Inheritance hierarchie
+- The most fundamental class on the top
+- The most specialized class on the bottom
+
+Public inheritance
+- derived classes can access and use public members of the base class. But the derived class can't directly access private members
+- the same applies to friends of the derived class. They have access to private members of the derived class, but don't have access to the base class
+
+
+See [Inheritance - public](example-59)
+See [Inheritance - protected](example-60)

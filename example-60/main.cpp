@@ -15,11 +15,15 @@ int main(int argc, char **argv)
 
     std::cout << "Inheritance" << std::endl;
 
+    std::string sport("Football");
     Player p1("Basketball");
-    p1.set_first_name("John");
-    p1.set_last_name("Snow");
+    Player p2(sport);
+    Player p3("Hockey", "Pieter", "van der Zand");
+    p3.first_name("Karel");
 
-    std::cout << "player: " << p1 << std::endl;
+    std::cout << "player p1: " << p1 << std::endl;
+    std::cout << "player p2: " << p2 << std::endl;
+    std::cout << "player p3: " << p3 << std::endl;
 
     std::cout << std::endl;
 
