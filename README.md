@@ -1,9 +1,9 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=83573
+Tot: https://youtu.be/8jLOx1hD3_o?t=84731
 C++ Course
 
-See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
+- See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
 
 course code: https://github.com/rutura/The-C-20-Masterclass-Source-Code
 
@@ -161,24 +161,17 @@ Unicode is out of scope for this course. See https://stackoverflow.com/questions
 The compiler tries to deduce the type based on value.
 Best practice don't use.
 
-See [Output numbers/string](example-4/main.cpp)
-
-See [Integer base dec/oct/hex](example-5/main.cpp)
-
-See [Declaration/initialization datatype](example-6/main.cpp)
-
-See [Integer datatype](example-7/main.cpp)
-
-See [Float datatype](example-8/main.cpp)
-
-See [Boolean datatype](example-9/main.cpp)
-
-See [Initialization](example-10/main.cpp)
-
-See [Initialization and automatic type](example-11/main.cpp)
+- See [Output numbers/string](example-4/main.cpp)
+- See [Integer base dec/oct/hex](example-5/main.cpp)
+- See [Declaration/initialization datatype](example-6/main.cpp)
+- See [Integer datatype](example-7/main.cpp)
+- See [Float datatype](example-8/main.cpp)
+- See [Boolean datatype](example-9/main.cpp)
+- See [Initialization](example-10/main.cpp)
+- See [Initialization and automatic type](example-11/main.cpp)
 
 ## Operations
-See [Simple operators](example-12/main.cpp)
+- See [Simple operators](example-12/main.cpp)
 
 ### Division
 With integers you only get the hole number, not the remainder.
@@ -186,25 +179,25 @@ To get the remainder use '%' the modulo operator.
 
 ### Preference
 
-See https://en.cppreference.com/w/ for general language documentation
+- See https://en.cppreference.com/w/ for general language documentation
 and https://en.cppreference.com/w/cpp/language/operator_precedence for operator precedence
 
-See [Precedence](example-13/main.cpp)
+- See [Precedence](example-13/main.cpp)
 
 ### Increment / decrement operators
-See [Increment/Decrement operators](example-14/main.cpp)
+- See [Increment/Decrement operators](example-14/main.cpp)
 
 ### Compound assignment operators
-See [Compound assignment operators](example-15/main.cpp)
+- See [Compound assignment operators](example-15/main.cpp)
 
 ### Relational operators
-See [Relational operators](example-16/main.cpp)
+- See [Relational operators](example-16/main.cpp)
 
 ### Logical operators
-See [Logical operators](example-17/main.cpp)
+- See [Logical operators](example-17/main.cpp)
 
 ### Output formatting
-See also https://en.cppreference.com/w/cpp/io/manip 
+- See also https://en.cppreference.com/w/cpp/io/manip 
 
 The following operators exist
 - std::boolapha
@@ -226,46 +219,40 @@ The following operators exist
 - std::setprecision()
 - std::setfill()
 
-See [Output formatting](example-18/main.cpp)
-
+- See [Output formatting](example-18/main.cpp)
 
 ### Limits
-See https://en.cppreference.com/w/cpp/types/numeric_limits 
-
-See [Limits](example-19/main.cpp)
+- See https://en.cppreference.com/w/cpp/types/numeric_limits 
+- See [Limits](example-19/main.cpp)
 
 
 ### Math functions
-See https://en.cppreference.com/w/cpp/header/cmath
-
-See [Math operators](example-20/main.cpp)
+- See https://en.cppreference.com/w/cpp/header/cmath
+- See [Math operators](example-20/main.cpp)
 
 
 ### Support operators
-See [Support operators](example-21/main.cpp)
+- See [Support operators](example-21/main.cpp)
 
 ### Bit operators
-See [Bit operators](example-22/main.cpp)
+- See [Bit operators](example-22/main.cpp)
 
 ### Flow control
-See [Conditional flow](example-23/main.cpp)
+- See [Conditional flow](example-23/main.cpp)
 
 
 ### Loops
-See [Loops](example-24/main.cpp)
+- See [Loops](example-24/main.cpp)
 
 ### Arrays
-See [Array basic](example-25/main.cpp)
-
-See [Array](example-26/main.cpp)
-
-See [Array bounds](example-27/main.cpp)
+- See [Array basic](example-25/main.cpp)
+- See [Array](example-26/main.cpp)
+- See [Array bounds](example-27/main.cpp)
 
 
 ### Pointers
-See [Pointers](example-28/main.cpp)
-
-See [Pointers to char](example-29/main.cpp)
+- See [Pointers](example-28/main.cpp)
+- See [Pointers to char](example-29/main.cpp)
 
 ### Memory
 
@@ -292,7 +279,7 @@ Comparison Stack Heap
 | developer isn't in full control of the memory lifetime | developer is in full control when memory is allocated and when it's released |
 | lifetime is controlled by the scope mechanism          | lifetime is controlled explicitly through new and delete operator            |
 
-See [Memory model](example-30/main.cpp)
+- See [Memory model](example-30/main.cpp)
 
 Allocating memory 
 ```cpp
@@ -315,27 +302,27 @@ p_number3 = nullptr;
 *Calling delete twice on the same pointer may lead to undefined behaviour!!!!*
 The compiler gives no error/warning.
 
-See [Memory allocation](example-31/main.cpp)
+- See [Memory allocation](example-31/main.cpp)
 
 *Pointers: Best practice*
 - initialize pointers
 - reset pointers after delete
 - for multiple pointers to the same address make sure the owner of the pointer is clear
 
-See [Dangling pointers](example-32/main.cpp)
+- See [Dangling pointers](example-32/main.cpp)
 
 ### Memory allocation error
-See [Memory allocation error](example-33/main.cpp)
+- See [Memory allocation error](example-33/main.cpp)
 
 ### Memory leaks
 This occurs when you loose access to memory that was dynamically allocated
 If your program runs for a long time memory leaks might lead to a crash of your program
 
-See [Memory leaks - Dynamic array allocation](example-34/main.cpp)
+- See [Memory leaks - Dynamic array allocation](example-34/main.cpp)
 
 ### References
 
-See [References](example-35/main.cpp)
+- See [References](example-35/main.cpp)
 
 Comparison between references and pointers
 
@@ -354,7 +341,7 @@ p_value = &another_value; // gives an error at compiletime
 
 ### References and const
 
-See [References and const](example-36/main.cpp)
+- See [References and const](example-36/main.cpp)
 
 ### String manipulations
 
@@ -376,9 +363,9 @@ and cstring (see https://en.cppreference.com/w/cpp/header/cstring )
 
 c-strings are not save or convenient. std::string is a better alternative
 
-See [String manipulations](example-37/main.cpp)
-See [C-String manipulations](example-38/main.cpp)
-See [std::string](example-39/main.cpp)
+- See [String manipulations](example-37/main.cpp)
+- See [C-String manipulations](example-38/main.cpp)
+- See [std::string](example-39/main.cpp)
 
 ### One definition rule
 In the context of a program there is only meaning for declarations
@@ -389,7 +376,7 @@ In the context of a program there is only meaning for declarations
 - class static member variables
 
 
-See [One definition rule](example-40)
+- See [One definition rule](example-40)
 
 ### Functions
 
@@ -400,15 +387,15 @@ The function signature is function name + function parameters
 Function declaration and implementation can be split using .h (declaration - prototype) and .cpp (implementation) files.
 The prototype needs to be known before the implementation
 
-See [Functions](example-41/main.cpp)
-See [Function declaration and Definition](example-42/main.cpp)
+- See [Functions](example-41/main.cpp)
+- See [Function declaration and Definition](example-42/main.cpp)
 
 The compiler uses different phases:
 - preprocessing reading definitions generate translation units
 - compiling translation units to generate objects
 - linking objects to generate an exacutable
   
-See [Function declaration and Definition in multiple files](example-43)
+- See [Function declaration and Definition in multiple files](example-43)
 
 ### Pass by value / pointer /reference
 
@@ -417,13 +404,13 @@ See [Function declaration and Definition in multiple files](example-43)
 
 *The best practice is to pass by reference.*
 
-See [Pass by value / pointer / reference](example-44/main.cpp)
+- See [Pass by value / pointer / reference](example-44/main.cpp)
 
 ### Return values
 
 In modern compilers, return by value is commonly optimized out by the compiler when possible and modified to return by reference avoiding unnecessary copies!
 
-See [Returning values](example-45/main.cpp)
+- See [Returning values](example-45/main.cpp)
 
 
 ### Function overloading
@@ -434,14 +421,14 @@ With function overloading the parameters may differ by:
 - type
 
 
-See [Function overloading](example-46/main.cpp)
+- See [Function overloading](example-46/main.cpp)
 
 ### Lambda Functions
 
 Lambda functions is a mechanism to setup anonymous functions (without names).
 Once set up, we can either give them names and call them, or get the lambda functions to do things directly.
 
-See [Lambda Functions](example-47/main.cpp)
+- See [Lambda Functions](example-47/main.cpp)
 
 ### Function Templates
 
@@ -457,9 +444,8 @@ Task no code repetition.
 - there are tools like cppinsights.io that can show you template instantiations. You can even use the debugger to infer that information
 - the arguments passed to a function template must support the operations that are done in the body of the function
 
-See https://en.cppreference.com/w/cpp/language/templates 
-
-See [Function Templates](example-48/main.cpp)
+- See https://en.cppreference.com/w/cpp/language/templates 
+- See [Function Templates](example-48/main.cpp)
 
 When declaring a template with same name but passing variable by value and another passing parameters by reference the compile won't know what to use
 
@@ -478,7 +464,7 @@ int main(int argc, char **argv) {
 ```
 ### Concepts
 
-See https://en.cppreference.com/w/cpp/concepts
+- See https://en.cppreference.com/w/cpp/concepts
 
 There are standard builtin concepts but you can also create your own concepts
 Some built in concepts are
@@ -500,9 +486,9 @@ Requires clause
 - compound requirements
 - type requirements
 
-See [Concepts](example-49/main.cpp)
-See [Combining Concepts](example-50/main.cpp)
-See [Concepts and auto](example-51/main.cpp)
+- See [Concepts](example-49/main.cpp)
+- See [Combining Concepts](example-50/main.cpp)
+- See [Concepts and auto](example-51/main.cpp)
 
 ### Classes
 
@@ -523,13 +509,13 @@ A class is a blueprint (model) for a realworld object.
 When you create your own constructur (without a default constructor) the compiler will nog generate a default constructor, without a parameter list. Resulting in a compilation error.
 
 
-See [Classes](example-52/main.cpp)
-See [Constructors](example-53/main.cpp)
+- See [Classes](example-52/main.cpp)
+- See [Constructors](example-53/main.cpp)
 
 
 ### Classes across multiple files
 
-See [Classes across multiple files](example-54)
+- See [Classes across multiple files](example-54)
 
 ### Managing Class Objects Throug Pointers
 
@@ -545,7 +531,7 @@ When are destructor called
 
 When calling constructors for objects o1..o4 in a specific context the order of destructor calls are o4..o1
 
-See [Managing Class Objects Throug Pointers](example-55)
+- See [Managing Class Objects Throug Pointers](example-55)
 
 ### This pointer
 
@@ -608,18 +594,17 @@ Dog & Dog::set_dog_age(int age_param)
 p_dog->set_dog_name("Mario").set_dog_breed("Fox Terrier").set_dog_age(5);
 ```
 
-See [This pointer](example-56)
+- See [This pointer](example-56)
 
 ### Structs
 
-See [This pointer](example-57/main.cpp)
+- See [This pointer](example-57/main.cpp)
 
 ### Size of class objects
 
 In general: the size of a class object is the sum of the size of each member variable.
 
-
-See [Size of class objects](example-58/main.cpp)
+- See [Size of class objects](example-58/main.cpp)
 
 ### Inheritance
 
@@ -636,6 +621,38 @@ Public inheritance
 - derived classes can access and use public members of the base class. But the derived class can't directly access private members
 - the same applies to friends of the derived class. They have access to private members of the derived class, but don't have access to the base class
 
+```cpp
+class Player: public Person
+```
 
-See [Inheritance - public](example-59)
-See [Inheritance - protected](example-60)
+<table>
+<tr><th>Base class: Person</th><th>Derived class: Player</th></tr>
+<tr>
+<td>
+
+| Level           |   Name |
+|-----------------|--------|
+| class           | Person |
+| public field    |    m_1 |
+| protected field |    m_2 |
+| private field   |    m_3 |
+
+</td>
+<td>
+
+| Level           |   Name |
+|-----------------|--------|
+| class           | Player |
+| public field    |    m_1 |
+| protected field |    m_2 |
+| private field   |    m_3 |  
+
+</td>
+</tr>
+</table>
+
+
+
+- See [Inheritance - public](example-59)
+- See [Inheritance - protected](example-60)
+- See [Inheritance - base class access specifiers](example-61)

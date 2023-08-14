@@ -5,7 +5,7 @@
 #include <iostream>
 #include "person.h" // inherit public from person class
 
-class Player : public Person // base class access specifiers is here public
+class Player : public Person
 {
     friend std::ostream &operator<<(std::ostream &out, const Player &player);
 

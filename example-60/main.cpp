@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     Player p1("Basketball");
     Player p2(sport);
     Player p3("Hockey", "Pieter", "van der Zand");
-    p3.first_name("Karel");
+    //p3.first_name("Karel");  // Compiler error note: declared protected here
 
     std::cout << "player p1: " << p1 << std::endl;
     std::cout << "player p2: " << p2 << std::endl;
