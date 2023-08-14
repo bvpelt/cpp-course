@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=84731
+Tot: https://youtu.be/8jLOx1hD3_o?t=84929
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -621,6 +621,7 @@ Public inheritance
 - derived classes can access and use public members of the base class. But the derived class can't directly access private members
 - the same applies to friends of the derived class. They have access to private members of the derived class, but don't have access to the base class
 
+#### Public inheritance
 ```cpp
 class Player: public Person
 ```
@@ -645,6 +646,69 @@ class Player: public Person
 | class           | Player |
 | public field    |    m_1 |
 | protected field |    m_2 |
+| private field   |    m_3 |  
+
+</td>
+</tr>
+</table>
+
+#### Protected inheritance
+```cpp
+class Player: protected Person
+```
+
+<table>
+<tr><th>Base class: Person</th><th>Derived class: Player</th></tr>
+<tr>
+<td>
+
+| Level           |   Name |
+|-----------------|--------|
+| class           | Person |
+| public field    |    m_1 |
+| protected field |    m_2 |
+| private field   |    m_3 |
+
+</td>
+<td>
+
+| Level           |   Name |
+|-----------------|--------|
+| class           | Player |
+| protected field    |    m_1 |
+| protected field |    m_2 |
+| private field   |    m_3 |  
+
+</td>
+</tr>
+</table>
+
+
+#### Private inheritance
+```cpp
+class Player: private Person
+```
+
+<table>
+<tr><th>Base class: Person</th><th>Derived class: Player</th></tr>
+<tr>
+<td>
+
+| Level           |   Name |
+|-----------------|--------|
+| class           | Person |
+| public field    |    m_1 |
+| protected field |    m_2 |
+| private field   |    m_3 |
+
+</td>
+<td>
+
+| Level           |   Name |
+|-----------------|--------|
+| class           | Player |
+| private field   |    m_1 |
+| private field   |    m_2 |
 | private field   |    m_3 |  
 
 </td>
