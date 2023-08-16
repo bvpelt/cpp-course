@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=84929
+Tot: https://youtu.be/8jLOx1hD3_o?t=88016
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -675,7 +675,7 @@ class Player: protected Person
 | Level           |   Name |
 |-----------------|--------|
 | class           | Player |
-| protected field    |    m_1 |
+| protected field |    m_1 |
 | protected field |    m_2 |
 | private field   |    m_3 |  
 
@@ -715,8 +715,38 @@ class Player: private Person
 </tr>
 </table>
 
-
+- Through the  base class access specifiers we can control how relexed or constrained the access of base class members to the derived class is.
+- Regardless of the access specifier, private members of a base class are never accessible from a derived class
+- A friend function within a derived class may access public/protected members from the base class!!!
 
 - See [Inheritance - public](example-59)
 - See [Inheritance - protected](example-60)
 - See [Inheritance - base class access specifiers](example-61)
+
+When inheriting from a class that is derived from a base class with private inheritance, none of the inherited members can be accessed.
+
+Example:
+
+```cpp
+class Person {
+    public:
+    int m_1;
+    protected:
+    int m_2;
+    private:
+    int m_3:
+};
+
+class Engineer: private Person {
+    // m1 private access
+    // m2 private access
+    // m3 private access
+};
+
+Class CivilEngineer: public Engineer {
+    // m1 private access
+    // m2 private access
+    // m3 private access    
+}
+```
+- See [Inheritance - private](example-62)

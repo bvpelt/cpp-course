@@ -1,9 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <string>
-#include <iostream>
-#include "person.h" // inherit public from person class
+#include "person.h"
 
 class Player : public Person
 {
@@ -11,22 +9,13 @@ class Player : public Person
 
 public:
     Player();
-
-    Player(std::string &game_param);
-    Player(std::string &game_param, std::string &first_name_param, std::string &last_name_param);
-
-    Player(const char *game_param);
-    Player(const char *game_param, const char * first_name_param, const char * last_name_param);
-
     ~Player();
 
-    // public Getter
-    std::string get_game() const;
-
-    void set_game(const char *game);
+    void play();
 
 private:
-    std::string game{"None"};
+    int m_career_start_year{0};
+    double m_salary{0.0};
+    int health_factor{0};
 };
-
 #endif
