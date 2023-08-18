@@ -19,5 +19,5 @@ void CivilEngineer::build_road()
 {
     // std::string name = this->get_full_name();   error: ‘std::string Person::get_full_name() const’ is private within this context
     // this->m_full_name = "Daniel Gray";          error: ‘std::string Person::m_full_name’ is private within this context
-    this->m_age = 24;
+    // this->m_age = 24;                           error: ‘int Person::m_age’ is private within this context
 }

@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=88016
+Tot: https://youtu.be/8jLOx1hD3_o?t=89216
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -750,3 +750,8 @@ Class CivilEngineer: public Engineer {
 }
 ```
 - See [Inheritance - private](example-62)
+
+Although there are workarounds, *it's not a good idea* to use these workarounds.
+Code gets unclear - what is the access level of a field.
+
+- See [Inheritance - private with workaround](example-63)
