@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=89216
+Tot: https://youtu.be/8jLOx1hD3_o?t=93122
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -755,3 +755,15 @@ Although there are workarounds, *it's not a good idea* to use these workarounds.
 Code gets unclear - what is the access level of a field.
 
 - See [Inheritance - private with workaround](example-63)
+
+Best practice: Always provide a default constructor for your classes, especially if they will be part of an inheritance hierarchy.
+
+Constructors are called from the most basic to the most specilized class in the hierarchy.
+
+- See [Inheritance - and default arg constructor](example-64)
+
+- See [Inheritance - and custom constructors](example-65)
+
+The compiler will create a default copy constructor which will work assumed there is no dynamic memory allocation used in member fields.
+
+- See [Inheritance - and copy constructors](example-66)
