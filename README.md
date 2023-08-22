@@ -760,10 +760,25 @@ Best practice: Always provide a default constructor for your classes, especially
 
 Constructors are called from the most basic to the most specilized class in the hierarchy.
 
-- See [Inheritance - and default arg constructor](example-64)
+- See [Inheritance - Default arg constructor](example-64)
 
-- See [Inheritance - and custom constructors](example-65)
+- See [Inheritance - Custom constructors](example-65)
 
 The compiler will create a default copy constructor which will work assumed there is no dynamic memory allocation used in member fields.
 
-- See [Inheritance - and copy constructors](example-66)
+- See [Inheritance - Copy constructors](example-66)
+
+Base constructors are not inherited by default.
+You can use a construct to explicit define inheritance of the base constructor. This causes the compiler to generate a default constructor as result of the inheritance.
+
+The access identifier (public, protected, private) of the base class constructor will be used for the generated derived class constructor.
+
+Some facts about Inheritance of Base constructors
+- Copy constructors are not inherited. But you won't usually notice this as the compiler will insert an automatic copy constructor
+- Inherited constructor are base constructors. They have no knowledge of the derived class. Any member from the derived class will just contain junk or whatever default value it's initialized with
+- Constructors are inherited with whatever access specifier they had in the base class
+- On top of derived constructors, you can add your own that possibly properly initialize derived member variables
+- Inheriting constructors adds a level of confusion to you code, it's not clear which constructor is building your object. It is recommended to avoid them an only use this feature if no other option is available
+
+
+- See [Inheritance - Base constructors](example-67)
