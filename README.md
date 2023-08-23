@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=93122
+Tot: https://youtu.be/8jLOx1hD3_o?t=98086
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -782,3 +782,31 @@ Some facts about Inheritance of Base constructors
 
 
 - See [Inheritance - Base constructors](example-67)
+
+In the example the class hierarchie consists of:
+
+Person <- Engineer: public Person <- CivilEngineer: public Engineer
+
+If a CivilEngineer object is instantiated the order in which constructors is called is:
+- Person
+- Engineer
+- CivilEngineer
+
+If the CivilEngineer object is destroyed the order in which destructors is called is:
+- CivilEngineer
+- Engineer
+- Person
+
+- See [Inheritance - Destructors](example-68)
+
+In the inherited (child) class member variables or methods can have the same name as in the base class.
+
+The behaviour of C++ is to hide/override the base class members/methods with the same name.
+
+- See [Inheritance - Reuse symbols](example-69)
+
+Polymorphism: a number of derived classes have a common base class. From within the derived class a different implementation of a base class member function is accessible.
+
+Static binding: The compiler just looks at the pointer to decide with member function version to call. It sees base class * and calls base class.member function.
+
+- See [Polymorphism](example-70)
