@@ -631,22 +631,22 @@ class Player: public Person
 <tr>
 <td>
 
-| Level           |   Name |
-|-----------------|--------|
+| Level           | Name   |
+| --------------- | ------ |
 | class           | Person |
-| public field    |    m_1 |
-| protected field |    m_2 |
-| private field   |    m_3 |
+| public field    | m_1    |
+| protected field | m_2    |
+| private field   | m_3    |
 
 </td>
 <td>
 
-| Level           |   Name |
-|-----------------|--------|
+| Level           | Name   |
+| --------------- | ------ |
 | class           | Player |
-| public field    |    m_1 |
-| protected field |    m_2 |
-| private field   |    m_3 |  
+| public field    | m_1    |
+| protected field | m_2    |
+| private field   | m_3    |
 
 </td>
 </tr>
@@ -662,22 +662,22 @@ class Player: protected Person
 <tr>
 <td>
 
-| Level           |   Name |
-|-----------------|--------|
+| Level           | Name   |
+| --------------- | ------ |
 | class           | Person |
-| public field    |    m_1 |
-| protected field |    m_2 |
-| private field   |    m_3 |
+| public field    | m_1    |
+| protected field | m_2    |
+| private field   | m_3    |
 
 </td>
 <td>
 
-| Level           |   Name |
-|-----------------|--------|
+| Level           | Name   |
+| --------------- | ------ |
 | class           | Player |
-| protected field |    m_1 |
-| protected field |    m_2 |
-| private field   |    m_3 |  
+| protected field | m_1    |
+| protected field | m_2    |
+| private field   | m_3    |
 
 </td>
 </tr>
@@ -694,22 +694,22 @@ class Player: private Person
 <tr>
 <td>
 
-| Level           |   Name |
-|-----------------|--------|
+| Level           | Name   |
+| --------------- | ------ |
 | class           | Person |
-| public field    |    m_1 |
-| protected field |    m_2 |
-| private field   |    m_3 |
+| public field    | m_1    |
+| protected field | m_2    |
+| private field   | m_3    |
 
 </td>
 <td>
 
-| Level           |   Name |
-|-----------------|--------|
-| class           | Player |
-| private field   |    m_1 |
-| private field   |    m_2 |
-| private field   |    m_3 |  
+| Level         | Name   |
+| ------------- | ------ |
+| class         | Player |
+| private field | m_1    |
+| private field | m_2    |
+| private field | m_3    |
 
 </td>
 </tr>
@@ -810,3 +810,21 @@ Polymorphism: a number of derived classes have a common base class. From within 
 Static binding: The compiler just looks at the pointer to decide with member function version to call. It sees base class * and calls base class.member function.
 
 - See [Polymorphism](example-70)
+
+Polymorphism with virtual member methods will have impact on memory claims.
+
+The references to virtual memberfunctions are stored in a virtual table.
+
+- See [Polymorphism - size of objects and slicing](example-71)
+
+- See [Polymorphism - objects in collections](example-72)
+
+The override keyword protects you for overwriting methods in the inheritance hierarchy
+
+- See [Polymorphism - override](example-73)
+
+If you overload a virtual method, you should also implement that overloaded function in all derived classes.
+
+- See [Polymorphism - overriding and hiding](example-74)
+
+- See [Polymorphism - at different levels](example-75)
