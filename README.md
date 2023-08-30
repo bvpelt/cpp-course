@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=98086
+Tot: https://youtu.be/8jLOx1hD3_o?t=103265
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -828,3 +828,32 @@ If you overload a virtual method, you should also implement that overloaded func
 - See [Polymorphism - overriding and hiding](example-74)
 
 - See [Polymorphism - at different levels](example-75)
+
+Using static member variables combined with inheritance 
+- See [Polymorphism - with static members](example-76)
+
+With final you can
+- restrict how you override methods in derived classes
+- restrict how you can derive from a base class
+
+- See [Final](example-77)
+
+Functions with default aguments
+- default arguments are handled at compile time
+- virtual functions are called at run time with polymorphism
+- if you use default arguments with virtual functions, you migth get weird (unexpected) results with polymorphism
+
+Best practice: do not use default parameters with virtual functions!
+
+- See [Virtual functions with default arguments](example-78)
+
+Best practice: always define virtual destructors
+
+- See [Virtual Destructors](example-79)
+
+Dynamic cast gives functionality
+- transform from base class pointer or reference to derived class pointer or reference at run time
+- make it possible to call non polymorphic methods on derived objects
+
+
+- See [Dynamic_cast](example-80)
