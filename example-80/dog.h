@@ -17,6 +17,11 @@ public:
         std::cout << "(Dog) Destructor called" << std::endl;
     }
 
+    void do_some_dog_thing()
+    {
+        std::cout << "Doing some dog thing..., speed: " << this->speed << std::endl;
+    }
+
     virtual void breathes() const override
     {
         std::cout << "(Dog) breathes" << std::endl;
@@ -38,6 +43,9 @@ public:
     {
         std::cout << "(Dog) barks" << std::endl;
     }
+
+private:
+    double speed{};
 };
 
 #endif

@@ -23,6 +23,11 @@ public:
         std::cout << "(Feline) Destructor called" << std::endl;
     }
 
+    void do_some_feline_thing()
+    {
+        std::cout << "Doing some feline thing..." << std::endl;
+    }
+
     virtual void breathes() const override
     {
         std::cout << "(Feline) breathes" << std::endl;
@@ -33,6 +38,6 @@ public:
         std::cout << "(Feline) runs" << std::endl;
     }
 
-    std::string m_fur_style;
+    std::string m_fur_style{"stiped"};
 };
 #endif

@@ -1,6 +1,6 @@
 # cpp-course
 
-Tot: https://youtu.be/8jLOx1hD3_o?t=103265
+Tot: https://youtu.be/8jLOx1hD3_o?t=109489
 C++ Course
 
 - See course: https://www.youtube.com/watch?v=8jLOx1hD3_o
@@ -855,5 +855,18 @@ Dynamic cast gives functionality
 - transform from base class pointer or reference to derived class pointer or reference at run time
 - make it possible to call non polymorphic methods on derived objects
 
+Typecasts are done to make code more robust.
+Usually in functions which accept a base type but need functionality for a derived type.
+
+Overusing down casts is a sign of bad design. If you are doing a lot of polymorphic function calls on derived object, you should make that function polymorphic in the first place.
 
 - See [Dynamic_cast](example-80)
+
+Reasons not to call virtual functions from constructors & destructors:
+- you won't get polymorphic results, but static binding since derived object is not yet instantiated when in base constructor a virtual function is called.
+
+Best practice: Never call virtual functions from a constructor or destructor.
+
+- See [Don't call virtual (polymorphic) functions from constructors & destructors](example-81)
+
+- See [Pure virtual functions and abstract classes](example-82)
