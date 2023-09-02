@@ -869,4 +869,19 @@ Best practice: Never call virtual functions from a constructor or destructor.
 
 - See [Don't call virtual (polymorphic) functions from constructors & destructors](example-81)
 
+Pure virtual functions
+- if a class has at least one pure virtual function, it becomes an abstract class
+- you can't create objects of an abstract class, if you do, you'll get a compiler error
+- derived classes from an abstract class must explicitly override all the pure virtual functions from the abstract parent class. It they don't they themselves become abstract
+- pure virtual functions don't have an implementation in the abstract class. They are ment to be implemented by the derived class(es)
+- you can't call the pure virtual functions from the constructor of the abstract class
+- the constructor of the abstract class is used by deriving class to build up the base part of the object
+
 - See [Pure virtual functions and abstract classes](example-82)
+
+Abstract classes as interfaces
+- an abstract class with only pure virtual functions and no member variables can be uses to model what is called an interface in OO programming
+- an interface is a specification of something that will be fully implemented in a derived class, but the specification itself resides in an abstract class
+- an interface is something one can attach to a class to implement functionality
+  
+- See [Abstract classes as interfaces](example-83)
